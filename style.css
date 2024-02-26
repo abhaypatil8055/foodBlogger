@@ -29,20 +29,46 @@
 }
 
 #carouselExampleAutoplaying {
-    height: 623px;
-    opacity: 0.7;
+    height: 590px;
 }
 
 #carouselExampleAutoplaying img {
-    height: 623px;
+    height: 590px;
 }
 
 .navbar-brand img {
     width: 200px;
     position: relative;
+    animation: toplogo 5s infinite;
     z-index: 2;
     top: 60px;
-    left: 10px;
+}
+
+@keyframes toplogo {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 900px;
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 990px) {
+    .navbar-brand img {
+        position: relative;
+        animation: toplogosmall 5s infinite reverse;
+    }
+
+    @keyframes toplogosmall {
+        0% {
+            left: 0px;
+        }
+
+        100% {
+            left: 300px;
+        }
+    }
 }
 
 @media only screen and (min-width: 150px) and (max-width: 990px) {
@@ -125,19 +151,35 @@
     position: relative;
 }
 
-@media only screen and (min-width: 150px) and (max-width : 1080px) {
-    #footlogo {
-        display: none;
-    }
-}
-
 @keyframes rideBike {
     0% {
         left: 0px;
     }
 
     100% {
-        left: 1100px;
+        left: 1000px;
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width : 750px) {
+    #footlogo {
+        width: 200px;
+        animation: mybike 5s infinite;
+    }
+
+    @keyframes mybike {
+        0% {
+            left: 0px;
+        }
+
+        100% {
+            left: 250px;
+        }
+
+    }
+
+    .navbar-nav {
+        display: none;
     }
 }
 
