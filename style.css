@@ -57,7 +57,7 @@
 @media only screen and (min-width: 150px) and (max-width: 990px) {
     .navbar-brand img {
         position: relative;
-        animation: toplogosmall 5s infinite reverse;
+        animation: toplogosmall 5s infinite;
     }
 
     @keyframes toplogosmall {
@@ -66,7 +66,7 @@
         }
 
         100% {
-            left: 300px;
+            left: 80px;
         }
     }
 }
@@ -163,7 +163,7 @@
 
 @media only screen and (min-width: 150px) and (max-width : 750px) {
     #footlogo {
-        width: 200px;
+        width: 100px;
         animation: mybike 5s infinite;
     }
 
@@ -173,7 +173,7 @@
         }
 
         100% {
-            left: 250px;
+            left: 80px;
         }
 
     }
